@@ -23,3 +23,9 @@ document.getElementById("rec-btn").addEventListener("click", function(){
     const areaShowcase = document.getElementById('rec-res');
     areaShowcase.innerText = recArea;
 });
+
+document.getElementById("par-btn").addEventListener("click", function(){
+
+    
+
+});
