@@ -1,33 +1,25 @@
-function calculateTriangleArea(){
+document.getElementById("tri-btn").addEventListener("click", function(){
     // triangle base value
-    const triBaseField = document.getElementById('tri-base');
-    const triBaseString = triBaseField.value;
-    const triBase = parseFloat(triBaseString);
+    const triBase = getValue('tri-base');
 
-    //triangle height value
-    const triHeightField = document.getElementById('tri-height');
-    const triHeightString = triHeightField.value;
-    const triHeight = parseFloat(triHeightString);
+    // triangle height value
+    const triHeight = getValue('tri-height');
 
     const triArea = 0.5 * triBase * triHeight; 
 
     const areaShowcase = document.getElementById('tri-res');
     areaShowcase.innerText = triArea;
-}
+});
 
-function calculateRectangleArea(){
+document.getElementById("rec-btn").addEventListener("click", function(){
     // rectangle width value
-    const recWidthField = document.getElementById('rec-width');
-    const recWidthString = recWidthField.value;
-    const recWidth = parseFloat(recWidthString);
+    const recWidth = getValue('rec-width');
 
     // rectangle length value
-    const recLengthField = document.getElementById('rec-length');
-    const recLengthString = recLengthField.value;
-    const recLength = parseFloat(recLengthString);
+    const recLength = getValue('rec-length');
 
     const recArea = recWidth * recLength;
 
     const areaShowcase = document.getElementById('rec-res');
     areaShowcase.innerText = recArea;
-}
+});
