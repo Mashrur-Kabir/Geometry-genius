@@ -58,19 +58,37 @@
                 <!-- third card -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl font-bold">Parallelogram</h2>
-                        <p class="-mt-1 mb-3">Area (A) = 0.5 x b x h</p>
+                        <p class="-mt-1 mb-3">Area (A) = b x h</p>
                         <div class="flex flex-row mb-5">
-                            <input id="par-width" class="px-3 py-1 border w-24 bg-slate-200" type="text" name="" id="" placeholder="base">
+                            <input id="par-base" class="px-3 py-1 border w-24 bg-slate-200" type="text" name="" id="" placeholder="base">
                             <span class="ml-1 py-1 mr-4">cm</span>
-                            <input id="rec-width" class="px-3 border w-24 bg-slate-200" type="text" name="" id="" placeholder="height">
+                            <input id="par-height" class="px-3 border w-24 bg-slate-200" type="text" name="" id="" placeholder="height">
                             <span class="ml-1 py-1">cm</span>
                         </div>
                         <p class="mb-2 text-xl">Area: <span class="font-medium" id="par-res"></span> cm<sup>2</sup></p>
                         <button id="par-btn" class="btn btn-primary w-full text-white">Calculate</button>
+                    </div>
+                </div>
+                <!-- Forth card -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-bold">Ellipse</h2>
+                        <p class="-mt-1 mb-3">Area (A) = π a b</p>
+                        <div class="flex flex-row mb-5">
+                            <input id="majorRadius" class="px-3 py-1 border w-24 bg-slate-200" type="text" name="" id="" placeholder="major-rad">
+                            <span class="ml-1 py-1 mr-4">cm</span>
+                            <input id="minorRadius" class="px-3 border w-24 bg-slate-200" type="text" name="" id="" placeholder="minor-rad">
+                            <span class="ml-1 py-1">cm</span>
+                        </div>
+                        <p class="mb-2 text-xl">Area: <span class="font-medium" id="ell-res"></span> cm<sup>2</sup></p>
+                        <button id="ell-btn" class="btn btn-primary w-full text-white">Calculate</button>
                     </div>
                 </div>
             </div>
