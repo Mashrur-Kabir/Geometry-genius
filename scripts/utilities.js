@@ -7,6 +7,11 @@ function getValue(inputField){
 
     valueFromField.value = ''; // clearing the input fields
 
+    if(isNaN(value)){
+        alert('Invalid value. put numbers only');
+        return;
+    }
+
     return value;
 }
 
@@ -15,4 +20,10 @@ function setElementInnerText(textField, area){
     // finding from DOM by textField's ID and then assigning it. And then setting the 'area' on its innerText for showcasing
     const areaShowcase = document.getElementById(textField);
     areaShowcase.innerText = area;
+}
+
+// LOG SECTION:
+
+function addToCalculationEntry(){
+    
 }

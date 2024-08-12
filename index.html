@@ -76,7 +76,7 @@
                 <!-- Forth card -->
                 <div class="card bg-base-100 w-96 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/ellipse.png" alt="Shoes" class="rounded-xl h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-2xl font-bold">Ellipse</h2>
@@ -89,6 +89,42 @@
                         </div>
                         <p class="mb-2 text-xl">Area: <span class="font-medium" id="ell-res"></span> cm<sup>2</sup></p>
                         <button id="ell-btn" class="btn btn-primary w-full text-white">Calculate</button>
+                    </div>
+                </div>
+                <!-- fifth card -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-bold">Rhombus</h2>
+                        <p class="-mt-1 mb-3">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div class="flex flex-row mb-5">
+                            <input id="base-Rhom" class="px-3 py-1 border w-24 bg-slate-200" type="text" name="" id="" placeholder="base">
+                            <span class="ml-1 py-1 mr-4">cm</span>
+                            <input id="height-Rhom" class="px-3 border w-24 bg-slate-200" type="text" name="" id="" placeholder="height">
+                            <span class="ml-1 py-1">cm</span>
+                        </div>
+                        <p class="mb-2 text-xl">Area: <span class="font-medium" id="rhom-res"></span> cm<sup>2</sup></p>
+                        <button id="rhom-btn" class="btn btn-primary w-full text-white">Calculate</button>
+                    </div>
+                </div>
+                <!-- sixth card -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-bold">Pentagon</h2>
+                        <p class="-mt-1 mb-3">Area (A) = 5/2 x s x a</p>
+                        <div class="flex flex-row mb-5">
+                            <input id="pen-Side" class="px-3 py-1 border w-24 bg-slate-200" type="text" name="" id="" placeholder="side">
+                            <span class="ml-1 py-1 mr-4">cm</span>
+                            <input id="pen-Apothem" class="px-3 border w-24 bg-slate-200" type="text" name="" id="" placeholder="apothem">
+                            <span class="ml-1 py-1">cm</span>
+                        </div>
+                        <p class="mb-2 text-xl">Area: <span class="font-medium" id="pen-res"></span> cm<sup>2</sup></p>
+                        <button id="pen-btn" class="btn btn-primary w-full text-white">Calculate</button>
                     </div>
                 </div>
             </div>
