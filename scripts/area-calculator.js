@@ -9,7 +9,7 @@ document.getElementById("tri-btn").addEventListener("click", function(){
     
     setElementInnerText('tri-res', triArea);
 
-    addToCalculationEntry(triArea);
+    addToCalculationEntry('Triangle: ', triArea); // for log 
 });
 
 document.getElementById("rec-btn").addEventListener("click", function(){
@@ -22,6 +22,8 @@ document.getElementById("rec-btn").addEventListener("click", function(){
     const recArea = (recWidth * recLength).toFixed(2); // area
 
     setElementInnerText('rec-res', recArea);
+
+    addToCalculationEntry('Rectangle: ', recArea); // for log
 });
 
 document.getElementById("par-btn").addEventListener("click", function(){
@@ -34,6 +36,8 @@ document.getElementById("par-btn").addEventListener("click", function(){
     const parArea = (parBase * parHeight).toFixed(2); // area
     
     setElementInnerText('par-res', parArea);
+
+    addToCalculationEntry('parallelogram: ', parArea); // for log
 });
 
 document.getElementById("ell-btn").addEventListener("click", function(){
@@ -46,6 +50,8 @@ document.getElementById("ell-btn").addEventListener("click", function(){
     const ellArea = (3.1416 * majorRad * minorRad).toFixed(2) ; // area
     
     setElementInnerText('ell-res', ellArea);
+
+    addToCalculationEntry('Ellipse: ', ellArea); // for log
 });
 
 document.getElementById("rhom-btn").addEventListener("click", function(){
@@ -58,6 +64,8 @@ document.getElementById("rhom-btn").addEventListener("click", function(){
     const rhomArea = (0.5 * baseRhom * heightRom).toFixed(2) ; // area
     
     setElementInnerText('rhom-res', rhomArea);
+
+    addToCalculationEntry('Rhombus: ', rhomArea); // for log
 });
 
 document.getElementById("pen-btn").addEventListener("click", function(){
@@ -70,4 +78,6 @@ document.getElementById("pen-btn").addEventListener("click", function(){
     const penArea = ((5/2) * penSide * penApothem).toFixed(2) ; // area
     
     setElementInnerText('pen-res', penArea);
+
+    addToCalculationEntry('Pentagon: ', penArea); // for log
 });

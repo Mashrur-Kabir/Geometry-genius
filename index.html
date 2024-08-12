@@ -16,8 +16,8 @@
     </header>
     <main>
         <!--MAIN CONTAINER -->'
-        <div class="flex flex-col lg:flex-row">
-            <!-- Shape Container -->
+        <div class="flex flex-col-reverse lg:flex-row">
+            <!-- SHAPE CONTAINER -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- first card -->
                 <div class="card bg-base-100 w-96 shadow-xl">
@@ -128,9 +128,14 @@
                     </div>
                 </div>
             </div>
-            <!-- Area calculator -->
-            <div class="w-[400px]">
-                <h1 class="text-4xl">Area calculator</h1>
+
+            <!-- AREA CALCULATOR LOG -->
+            <div class="w-[400px] flex flex-col items-center border-2 border-purple-500 rounded-md pt-6">
+                <h1 class="text-4xl font-bold mb-3">Area calculator:</h1>
+                <hr class="w-9/12 border-t-2 border-purple-400 mb-6">
+                <div id="calculation-entry">
+                    <!-- nothing here. were gonna create the element for display <p> inside the function-->
+                </div>
             </div>
         </div>
     </main>
